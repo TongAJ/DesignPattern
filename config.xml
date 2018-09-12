@@ -2,4 +2,5 @@
 <config>
     <chartType>histogram</chartType>
     <shapeType>xxx</shapeType>
+    <factoryBean>com.design.mode.factory.impl.FileLoggerFactory</factoryBean>
 </config>

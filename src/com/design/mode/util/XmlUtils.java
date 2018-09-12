@@ -19,11 +19,11 @@ public class XmlUtils {
      * @return chartType
      */
     public static String getType(String type){
-        // 定义返回变量
-        String chartType="";
-        // 调用 DocumentBuilderFactory.newInstance() 方法得到创建 DOM 解析器的工厂
-        DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
         try {
+            // 定义返回变量
+            String chartType="";
+            // 调用 DocumentBuilderFactory.newInstance() 方法得到创建 DOM 解析器的工厂
+            DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
             // 调用工厂对象的 newDocumentBuilder方法得到 DOM 解析器对象
             DocumentBuilder builder = builderFactory.newDocumentBuilder();
             // 传入解析的 XML 文档,以便 DOM 解析器解析它
@@ -34,10 +34,32 @@ public class XmlUtils {
             Node node = nodeList.item(0).getFirstChild();
             // 子节点内容
             chartType = node.getNodeValue().trim();
+            // 返回chartType
+            return chartType;
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
         }
-        // 返回chartType
-        return chartType;
+    }
+
+    /**
+     * 通过读取配置文件，并反射获取需要配置的工厂类型
+     * @return object
+     */
+    public static Object getBean() {
+        try {
+            DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = builderFactory.newDocumentBuilder();
+            Document document = builder.parse(new File("config.xml"));
+            NodeList nodeList = document.getElementsByTagName("factoryBean");
+            Node node = nodeList.item(0).getFirstChild();
+            String className = node.getNodeValue().trim();
+            Class clz = Class.forName(className);
+            Object object = clz.newInstance();
+            return object;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
