@@ -1,6 +1,6 @@
-package com.design.mode.beans.shape.impl;
+package com.design.mode.simplefactory.beans.shape.impl;
 
-import com.design.mode.beans.shape.Shape;
+import com.design.mode.simplefactory.beans.shape.Shape;
 
 public class Triangle implements Shape {
 

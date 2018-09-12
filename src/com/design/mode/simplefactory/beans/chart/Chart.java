@@ -1,4 +1,4 @@
-package com.design.mode.beans.chart;
+package com.design.mode.simplefactory.beans.chart;
 
 /**
  * @author AJ

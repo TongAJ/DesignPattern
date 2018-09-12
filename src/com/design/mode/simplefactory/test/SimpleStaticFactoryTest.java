@@ -1,7 +1,7 @@
-package com.design.mode.test;
+package com.design.mode.simplefactory.test;
 
-import com.design.mode.factory.ShapeFactory;
-import com.design.mode.beans.shape.Shape;
+import com.design.mode.simplefactory.ShapeFactory;
+import com.design.mode.simplefactory.beans.shape.Shape;
 
 /**
  * @author Administrator

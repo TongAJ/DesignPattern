@@ -1,4 +1,4 @@
-package com.design.mode.beans.shape;
+package com.design.mode.simplefactory.beans.shape;
 
 /**
  * @author AJ

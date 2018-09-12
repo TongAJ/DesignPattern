@@ -1,6 +1,7 @@
-package com.design.mode.factory;
+package com.design.mode.simplefactory;
 
-import com.design.mode.beans.chart.Chart;
+import com.design.mode.simplefactory.ChartFactory;
+import com.design.mode.simplefactory.beans.chart.Chart;
 import com.design.mode.util.XmlUtils;
 
 /**
@@ -15,7 +16,7 @@ import com.design.mode.util.XmlUtils;
  *      4.简单工厂模式由于使用了静态工厂方法，造成工厂角色无法形成基于继承的等级结构
  * @author AJ
  */
-public class SimpleFactory {
+public class SimpleFactoryPattern {
     public static void main(String[] args) {
 
         //01版本的代码没有遵循开闭原则，即每次Client需要更换类型时都要修改代码

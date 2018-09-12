@@ -1,9 +1,9 @@
-package com.design.mode.factory;
+package com.design.mode.simplefactory;
 
-import com.design.mode.beans.chart.Chart;
-import com.design.mode.beans.chart.impl.HistogramChart;
-import com.design.mode.beans.chart.impl.LineChart;
-import com.design.mode.beans.chart.impl.PieChart;
+import com.design.mode.simplefactory.beans.chart.Chart;
+import com.design.mode.simplefactory.beans.chart.impl.HistogramChart;
+import com.design.mode.simplefactory.beans.chart.impl.LineChart;
+import com.design.mode.simplefactory.beans.chart.impl.PieChart;
 import com.design.mode.util.XmlUtils;
 import org.jetbrains.annotations.NotNull;
 

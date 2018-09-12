@@ -1,8 +1,8 @@
 package com.design.mode.factory.impl;
 
 import com.design.mode.factory.LoggerFactory;
-import com.design.mode.beans.logger.Logger;
-import com.design.mode.beans.logger.impl.DatabaseLogger;
+import com.design.mode.factory.beans.logger.Logger;
+import com.design.mode.factory.beans.logger.impl.DatabaseLogger;
 
 /**
  * 数据库日志记录器工厂类：具体工厂

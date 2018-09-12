@@ -1,6 +1,6 @@
-package com.design.mode.beans.chart.impl;
+package com.design.mode.simplefactory.beans.chart.impl;
 
-import com.design.mode.beans.chart.Chart;
+import com.design.mode.simplefactory.beans.chart.Chart;
 
 /**
  * @author AJ

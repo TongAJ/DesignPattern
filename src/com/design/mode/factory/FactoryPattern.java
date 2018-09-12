@@ -1,6 +1,6 @@
 package com.design.mode.factory;
 
-import com.design.mode.beans.logger.Logger;
+import com.design.mode.factory.beans.logger.Logger;
 import com.design.mode.util.XmlUtils;
 
 

@@ -1,12 +1,15 @@
-package com.design.mode.factory;
+package com.design.mode.simplefactory;
 
 import com.design.mode.exception.UnSupportedShapeException;
-import com.design.mode.beans.shape.Shape;
-import com.design.mode.beans.shape.impl.Circle;
-import com.design.mode.beans.shape.impl.Square;
-import com.design.mode.beans.shape.impl.Triangle;
+import com.design.mode.simplefactory.beans.shape.Shape;
+import com.design.mode.simplefactory.beans.shape.impl.Circle;
+import com.design.mode.simplefactory.beans.shape.impl.Square;
+import com.design.mode.simplefactory.beans.shape.impl.Triangle;
 import com.design.mode.util.XmlUtils;
 
+/**
+ * @author AJ
+ */
 public class ShapeFactory {
 
     private static String SQUARE = "SQUARE";

@@ -1,4 +1,4 @@
-package com.design.mode.beans.logger;
+package com.design.mode.factory.beans.logger;
 
 /**
  * @author AJ

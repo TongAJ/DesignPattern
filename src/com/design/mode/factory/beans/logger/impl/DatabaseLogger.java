@@ -1,6 +1,6 @@
-package com.design.mode.beans.logger.impl;
+package com.design.mode.factory.beans.logger.impl;
 
-import com.design.mode.beans.logger.Logger;
+import com.design.mode.factory.beans.logger.Logger;
 
 /**
  * 数据库日志记录器：具体产品
