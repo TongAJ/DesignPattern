@@ -3,4 +3,5 @@
     <chartType>histogram</chartType>
     <shapeType>xxx</shapeType>
     <factoryBean>com.design.mode.factory.impl.FileLoggerFactory</factoryBean>
+    <abstractFactoryBean>com.design.mode.abstractfactory.impl.SpringSkinFactory</abstractFactoryBean>
 </config>

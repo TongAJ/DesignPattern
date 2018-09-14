@@ -1,7 +1,7 @@
 package com.design.mode.factory;
 
 import com.design.mode.factory.beans.logger.Logger;
-import com.design.mode.util.XmlUtils;
+import com.design.util.XmlUtils;
 
 
 /**
@@ -13,7 +13,7 @@ public class FactoryPattern {
         LoggerFactory factory;
         Logger logger;
         //getBean()的返回类型为Object，需要进行强制类型转换
-        factory = (LoggerFactory) XmlUtils.getBean();
+        factory = (LoggerFactory) XmlUtils.getBean("factoryBean");
         logger = factory.createLogger();
         logger.writeLog();
     }

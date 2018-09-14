@@ -1,11 +1,11 @@
 package com.design.mode.simplefactory;
 
-import com.design.mode.exception.UnSupportedShapeException;
+import com.design.exception.UnSupportedShapeException;
 import com.design.mode.simplefactory.beans.shape.Shape;
 import com.design.mode.simplefactory.beans.shape.impl.Circle;
 import com.design.mode.simplefactory.beans.shape.impl.Square;
 import com.design.mode.simplefactory.beans.shape.impl.Triangle;
-import com.design.mode.util.XmlUtils;
+import com.design.util.XmlUtils;
 
 /**
  * @author AJ

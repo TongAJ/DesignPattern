@@ -1,4 +1,4 @@
-package com.design.mode.util;
+package com.design.util;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -46,12 +46,12 @@ public class XmlUtils {
      * 通过读取配置文件，并反射获取需要配置的工厂类型
      * @return object
      */
-    public static Object getBean() {
+    public static Object getBean(String beanNode) {
         try {
             DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = builderFactory.newDocumentBuilder();
             Document document = builder.parse(new File("config.xml"));
-            NodeList nodeList = document.getElementsByTagName("factoryBean");
+            NodeList nodeList = document.getElementsByTagName(beanNode);
             Node node = nodeList.item(0).getFirstChild();
             String className = node.getNodeValue().trim();
             Class clz = Class.forName(className);

@@ -1,8 +1,7 @@
 package com.design.mode.simplefactory;
 
-import com.design.mode.simplefactory.ChartFactory;
 import com.design.mode.simplefactory.beans.chart.Chart;
-import com.design.mode.util.XmlUtils;
+import com.design.util.XmlUtils;
 
 /**
  * 简单工厂模式

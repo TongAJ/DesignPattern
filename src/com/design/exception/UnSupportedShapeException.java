@@ -1,4 +1,4 @@
-package com.design.mode.exception;
+package com.design.exception;
 
 /**
  * @author Administrator

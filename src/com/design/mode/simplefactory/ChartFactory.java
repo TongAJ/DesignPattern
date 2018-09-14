@@ -4,7 +4,7 @@ import com.design.mode.simplefactory.beans.chart.Chart;
 import com.design.mode.simplefactory.beans.chart.impl.HistogramChart;
 import com.design.mode.simplefactory.beans.chart.impl.LineChart;
 import com.design.mode.simplefactory.beans.chart.impl.PieChart;
-import com.design.mode.util.XmlUtils;
+import com.design.util.XmlUtils;
 import org.jetbrains.annotations.NotNull;
 
 /**
