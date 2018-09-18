@@ -2,6 +2,6 @@
 <config>
     <chartType>histogram</chartType>
     <shapeType>xxx</shapeType>
-    <factoryBean>com.design.mode.factory.impl.FileLoggerFactory</factoryBean>
-    <abstractFactoryBean>com.design.mode.abstractfactory.impl.SpringSkinFactory</abstractFactoryBean>
+    <factoryBean>com.design.mode.factory.method.impl.FileLoggerFactory</factoryBean>
+    <abstractFactoryBean>com.design.mode.factory.abstractfactory.impl.SpringSkinFactory</abstractFactoryBean>
 </config>
